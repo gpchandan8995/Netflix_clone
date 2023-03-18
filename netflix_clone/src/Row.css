@@ -1,0 +1,40 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  /* yamule smoothly var yete hover kelayavr */
+}
+/* upper one is size eksarkhi keli ht width */
+
+.row_posters {
+  /* ethe apan horizonal karnar purn images la */
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  /*scroll takasathi mhanje purn screen mob=ve nhi
+    honar fakt ha postersc class vala part honar hidden scroll  */
+  padding: 20px;
+  /* image var yetana crop nhi honar transition vapart tevha vaprah he */
+}
+
+.row_poster:hover {
+  transform: scale(1.04);
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+  /* to tell every brouser to not display scrollbars */
+}
+
+.row_posterLarge {
+  max-height: 250px;
+  transform: scale(1.08);
+  margin-left: 10px;
+}

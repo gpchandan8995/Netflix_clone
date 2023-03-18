@@ -1,0 +1,34 @@
+.nav{
+    position: fixed; 
+    /* yane tumcha navbar varti stick honar tumhi khali 
+    gele scrooll krt tri varti visible rahnar */
+top:0;
+width: 100%;
+height: 30px;
+padding: 20px;
+display: flex;
+z-index: 1;
+/* because it is alvay at top gin index as 1 */
+justify-content:space-between ;
+transition: all 0.5s;
+/* yachyamule je pan annimation hoty te slow smooth honar */
+
+}
+
+.nav_logo{
+    position: fixed;
+    left: 20px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.nav_avatar{
+    position: fixed;
+    right: 20px;
+    /* to fix avatar to right */
+    width: 30px;
+    object-fit: contain;
+}
+.nav_black{
+    background-color: #111;
+}
